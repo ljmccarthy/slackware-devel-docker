@@ -1,7 +1,7 @@
 FROM scratch
 ADD initrd-slackware-8.1.tgz /
 RUN mkdir /slackware /slack-rootfs
-ARG MIRROR_URL=https://lon.mirror.rackspace.com/slackware
+ARG MIRROR_URL=https://dfw.mirror.rackspace.com/slackware
 ADD $MIRROR_URL/slackware-8.1/slackware/a/aaa_base-8.1.0-i386-3.tgz /slackware
 ADD $MIRROR_URL/slackware-8.1/slackware/a/bash-2.05a-i386-2.tgz /slackware
 ADD $MIRROR_URL/slackware-8.1/slackware/a/bin-8.3.0-i386-2.tgz /slackware
